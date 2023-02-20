@@ -1,5 +1,9 @@
 let buttonAmount = 30
 
+const colorChange1 = "orange"
+const colorChange2 = "purple"
+const colorChange3 = "yellow"
+
 let body = document.querySelector( "body" )
 body.style.maxWidth = "560px"
 body.style.margin = "0 auto"
@@ -25,13 +29,13 @@ function createButtons( amount )
 
         button.onclick = ( function() {
             if ( button.value == 1 ) {
-                button.style.background = "red"
+                button.style.background = colorChange1
                 button.value = 2
             } else if ( button.value == 2) {
-                button.style.background = "purple"
+                button.style.background = colorChange2
                 button.value = 3
             } else if ( button.value == 3) {
-                button.style.background = "blue"
+                button.style.background = colorChange3
                 button.value = 4
             } else if ( button.value == 4) {
                 button.style.background = "black"
